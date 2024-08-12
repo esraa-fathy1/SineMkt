@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800');
+
+:root {
+    --brand_color: #e99c39;
+    --font_one: #626161;
+    --font-two: #998d81;
+    --font-three: #aaa8a7;
+    --slide_bg: #1b1e1f8e;
+    --bg_color: #f8f9fd;
+    --green_color: #47d93c;
+    --brown_color: #d8924c;
+    --active_star: #efce4a;
+    --star: #a9a9a9;
+}
+
+/* 
+body {
+    height: 5000px;
+} */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+h1,
+h2,
+h4 {
+    color: var(--font_one);
+}
+
+h5 {
+    color: var(--font-two);
+}
+
+.navbar,
+.carousel-item,
+.popular_card,
+.clients,
+.footer {
+    background-color: var(--bg_color);
+}
+
+button {
+    background-color: var(--brand_color) !important;
+    border-radius: 0% !important;
+    border: none !important;
+}
+
+/********************** Start of Nav **********************/
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: var(--brand_color)
+}
+
+.brand,
+.nav-link:hover {
+    color: var(--brand_color)
+}
+
+.counter {
+    font-size: .6rem;
+    line-height: 10px;
+    background-color: var(--brand_color) !important;
+}
+
+/********************** End of Nav **********************/
+/********************* Start of Carousel ********************/
+p,
+.discount {
+    color: var(--font-three);
+}
+
+.carousel-indicators [data-bs-target] {
+    height: 7px;
+    width: 7px;
+    border: double var(--brand_color) 5px !important;
+}
+
+.custom_indicator {
+    border-color: var(--brand_color) !important;
+}
+
+hr {
+    width: 45px;
+}
+
+.butt {
+    background-color: var(--bg_color) !important;
+    color: var(--brand_color);
+}
+
+/********************** End of Carousel **********************/
+/********************** Start of P.P *********************/
+.but_three {
+    background-color: var(--bg_color) !important;
+    border: solid .5px var(--font_one) !important;
+}
+
+.but_three:hover {
+    color: var(--brand_color);
+}
+
+.price {
+    color: var(--brand_color);
+    font-size: 1.1rem;
+}
+
+/********************** End of P.P **********************/
+/********************** Start of Products *********************/
+.arrival_container {
+    height: 270px;
+    width: 280px;
+    line-height: 200px;
+    background-color: var(--bg_color);
+}
+
+.sale::after {
+    content: "Sale";
+    position: absolute;
+    top: 7px;
+    right: 0;
+    height: 20px;
+    width: 60px;
+    color: #FFF;
+    line-height: 20px;
+}
+
+.green::after {
+    background-color: var(--green_color);
+}
+
+.brown::after {
+    background-color: var(--brand_color);
+}
+
+/********************** End of Products *********************/
+/********************** Start of Slide *********************/
+.collection {
+    background-image: url(../images/collection/sofa-collection-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
+    position: relative
+}
+
+.collection .dark {
+    background-color: var(--slide_bg);
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.collection .description {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 40%;
+}
+
+@media (max-width:800px) {
+    .collection .description {
+        width: 90%;
+    }
+
+}
+
+/********************** End of slide *********************/
+/********************** Start of F.P *********************/
+.fa-star {
+    color: var(--active_star);
+}
+
+.not-checked {
+    color: var(--star);
+}
+
+.fa-star:hover {
+    cursor: pointer;
+    color: var(--active_star);
+}
+
+/********************** End of F.P *********************/
+/********************** Start of Last list *********************/
+.list-group-item {
+    border: unset !important;
+    color: var(--font-three);
+}
+
+form {
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.338);
+    /* display: flex; */
+}
+
+input {
+    all: unset;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+}
+
+::placeholder {
+    color: var(--font-three);
+}
+
+.s-bar {
+    all: unset !important;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
+
+.fa-location-arrow {
+    cursor: pointer;
+    color: var(--brand_color);
+}
+
+/********************** End of Last list *********************/
+/********************** Start of Footer *********************/
+.social-logo,
+.cpy {
+    color: var(--font-three);
+}
+
+/********************** End of Footer **********************/
+
+.price_test::before {
+    content: "$"
+}
+
+.line_before {
+    position: relative;
+}
+
+.line_before {
+    height: 2px;
+    width: 40px;
+    background-color: #888;
+    top: 10px;
+}
+
+.price_container {
+    display: flex;
+    width: 15%;
+}
+
+/* .list-group-item::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f007";
+} */

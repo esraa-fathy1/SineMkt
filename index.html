@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="keywords" content="website, blog, foo, bar" />
+    <meta name="author" content="" />
+    <meta name="publisher" content="" />
+    <meta name="copyright" content="" />
+    <meta name="description" content="" />
+    <meta name="page-topic" content="" />
+    <meta name="page-type" content="" />
+    <meta name="audience" content="" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>SineMkt</title>
+</head>
+
+<body>
+    <!--------------------------------- Start of Nav --------------------------------->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Sine<span class="brand">Mkt</span>.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#new_arrival">new arrival</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#">features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#">blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#">contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-gear" viewBox="0 0 16 16">
+                        <path
+                            d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0" />
+                        <path
+                            d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z" />
+                    </svg>
+                    <div class="position-relative">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart3" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                        </svg>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-secondary counter">2
+                            <span class="visually-hidden">unread messages</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--------------------------------- End of Nav --------------------------------->
+
+    <!--------------------------- Start of Carousel ------------------------------------>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                class="active rounded-circle border custom_indicator border-2" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                class="rounded-circle border custom_indicator border-2" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                class="rounded-circle border custom_indicator border-2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active p-5">
+                <div class="row">
+                    <div class="col-lg-7 col-md-12 px-5 text-capitalize pt-5 mt-5">
+                        <div class="description d-flex flex-column gap-2">
+                            <h5>great design collection</h5>
+                            <h1>cloth covered accent chair</h1>
+                            <p class="intro">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Sapiente dolorum fugiat nihil, voluptas veritatis iste, eaque
+                                quisquam, non quidem nostrum harum possimus pariatur totam
+                                debitis velit ut aspernatur quos unde!
+                            </p>
+                        </div>
+                        <h5 class="fs-6 d-flex">
+                            <div class="price_container">
+                                <div class="line_before"></div>
+                                <span class="price_test"> 399.00</span>
+                            </div>
+                            <span class="text-decoration-line-through discount price_test"> 499.00</span>
+                        </h5>
+                        <button class="btn btn-primary w-25 text-capitalize mt-4" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                <path
+                                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                            </svg>
+                            add to cart
+                        </button>
+                        <button type="button" class="btn text-capitalize w-25 d-inline butt mt-4"
+                            data-bs-toggle="button">
+                            more info
+                        </button>
+                    </div>
+                    <div class="col-lg-5 col-md-12 d-flex justify-content-center">
+                        <img src="./images/slider/slider1.png" class="d-block mw-100 w-75" alt="Slide1" />
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item p-4">
+                <div class="row">
+                    <div class="col-7 px-5 text-capitalize pt-5 mt-5">
+                        <div class="description d-flex flex-column gap-2">
+                            <h5>great design collection</h5>
+                            <h1>cloth covered accent chair</h1>
+                            <p class="intro">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Sapiente dolorum fugiat nihil, voluptas veritatis iste, eaque
+                                quisquam, non quidem nostrum harum possimus pariatur totam
+                                debitis velit ut aspernatur quos unde!
+                            </p>
+                        </div>
+                        <hr />
+                        <h5 class="fs-6">
+                            $ 399.00
+                            <span class="text-decoration-line-through discount">$ 499.00</span>
+                        </h5>
+                        <button class="btn btn-primary w-25 text-capitalize mt-4" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                <path
+                                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                            </svg>
+                            add to cart
+                        </button>
+                        <button type="button" class="btn text-capitalize w-25 d-inline butt mt-4"
+                            data-bs-toggle="button">
+                            more info
+                        </button>
+                    </div>
+                    <div class="col-5 d-flex justify-content-center">
+                        <img src="./images/slider/slider2.png" class="d-block mw-100" alt="Slide2" />
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item p-4">
+                <div class="row">
+                    <div class="col-7 px-5 text-capitalize pt-5 mt-5">
+                        <div class="description d-flex flex-column gap-2">
+                            <h5>great design collection</h5>
+                            <h1>cloth covered accent chair</h1>
+                            <p class="intro">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Sapiente dolorum fugiat nihil, voluptas veritatis iste, eaque
+                                quisquam, non quidem nostrum harum possimus pariatur totam
+                                debitis velit ut aspernatur quos unde!
+                            </p>
+                        </div>
+                        <hr />
+                        <h5 class="fs-6">
+                            $ 399.00
+                            <span class="text-decoration-line-through discount">$ 499.00</span>
+                        </h5>
+                        <button class="btn btn-primary w-25 text-capitalize mt-4" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                <path
+                                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                            </svg>
+                            add to cart
+                        </button>
+                        <button type="button" class="btn text-capitalize w-25 d-inline butt mt-4"
+                            data-bs-toggle="button">
+                            more info
+                        </button>
+                    </div>
+                    <div class="col-5 d-flex justify-content-center">
+                        <img src="./images/slider/slider3.png" class="d-block mw-100" alt="Slide3" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------- End of Carousel ------------------------------------>
+
+    <!---------------------------Start of Popular Product ------------------------------------>
+    <div class="container mt-4 pt-4 text-capitalize">
+        <div class="row g-5">
+            <div class="col-lg-3 col-sm-6">
+                <div class="popular_card h-100 p-4 text-center">
+                    <img src="./images/populer-products/p1.png" alt="Achair" />
+                    <h4 class="pt-3">Arm Chair</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
+                        possimus?
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 order-1 order-lg-0">
+                <div class="popular_card h-100 p-4">
+                    <div class="row">
+                        <div class="col-4 ">
+                            <img src="./images/populer-products/p2.png" alt="Lchair" />
+                        </div>
+                        <div class="col-8">
+                            <h4>latest designed stool and chair</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                                sit dolor possimus dolorem amet. Quae modi beatae tempora
+                                libero necessitatibus repudiandae vitae asperiores
+                                exercitationem magni, quas quam voluptatum officia error.
+                            </p>
+                            <h4 class="fs-6">
+                                sales start from <span class="price">$99.00</span>
+                            </h4>
+                            <button type="button" class="btn active but_three" data-bs-toggle="button"
+                                aria-pressed="true">
+                                Discover More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="popular_card h-100 text-center">
+                    <img src="./images/populer-products/p3.png" alt="Hlamo" />
+                    <h4 class="pt-3">hanging lamp</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
+                        possimus?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------- End of Popular Product ------------------------------------>
+
+    <!--------------------------- Start of Product ------------------------------------>
+    <div id="new_arrival" class="container icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84">
+        <h2 class="text-center text-capitalize my-5">new arrivals</h2>
+        <div class="row g-4 row-cols-lg-4 row-cols-md-2 row-cols-sm-2 row-col-1">
+            <div class="col d-flex justify-content-center flex-column align-items-center">
+                <div class="arrival_container sale brown text-center p-2 position-relative">
+                    <img src="./images/collection/arrivals1.png" class="mw-100 mt-5" alt="product1" />
+                </div>
+                <h4 class="text-center text-capitalize mt-3 fs-5">wooden chair</h4>
+                <div class="discount">$65.00</div>
+            </div>
+            <div class="col d-flex justify-content-center flex-column align-items-center">
+                <div class="arrival_container sale green text-center p-2 position-relative">
+                    <img src="./images/collection/arrivals2.png" class="mw-100" alt="product2" />
+                </div>
+                <h4 class="text-center text-capitalize mt-3 fs-5">single armchair</h4>
+                <div class="discount">$80.00</div>
+            </div>
+            <div class="col d-flex justify-content-center flex-column align-items-center">
+                <div class="arrival_container text-center p-2 position-relative">
+                    <img src="./images/collection/arrivals3.png" class="mw-100" alt="product3" />
+                </div>
+                <h4 class="text-center text-capitalize mt-3 fs-5">wooden armchair</h4>
+                <div>$40.00</div>
+            </div>
+            <div class="col d-flex justify-content-center flex-column align-items-center">
+                <div class="arrival_container sale brown text-center p-2 position-relative">
+                    <img src="./images/collection/arrivals4.png" class="mw-100" alt="product4" />
+                </div>
+                <h4 class="text-center text-capitalize mt-3 fs-5">stylish chair</h4>
+                <div class="discount">$100.00</div>
+            </div>
+            <div class="col d-flex justify-content-center flex-column align-items-center">
+                <div class="arrival_container text-center p-2 position-relative">
+                    <img src="./images/collection/arrivals5.png" class="mw-100" alt="product5" />
+                </div>
+                <h4 class="text-center text-capitalize mt-3 fs-5">modern chair</h4>
+                <div>$120.00</div>
+            </div>
+            <div class="col d-flex justify-content-center flex-column align-items-center">
+                <div class="arrival_container sale brown text-center p-2 position-relative">
+                    <img src="./images/collection/arrivals6.png" class="mw-100" alt="product6" />
+                </div>
+                <h4 class="text-center text-capitalize mt-3 fs-5">
+                    mapple wood dinning table
+                </h4>
+                <div class="discount">$140.00</div>
+            </div>
+            <div class="col d-flex justify-content-center flex-column align-items-center">
+                <div class="arrival_container sale green text-center p-2 position-relative">
+                    <img src="./images/collection/arrivals7.png" class="mw-100" alt="product7" />
+                </div>
+                <h4 class="text-center text-capitalize mt-3 fs-5">arm chair</h4>
+                <div class="discount">$90.00</div>
+            </div>
+            <div class="col d-flex justify-content-center flex-column align-items-center">
+                <div class="arrival_container text-center p-2 position-relative">
+                    <img src="./images/collection/arrivals8.png" class="mw-100" alt="product8" />
+                </div>
+                <h4 class="text-center text-capitalize mt-3 fs-5">wooden bed</h4>
+                <div>$140.00</div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------End of Products ------------------------------------>
+
+    <!---------------------------Start of Slide ------------------------------------>
+    <div class="collection text-capitalize mt-5">
+        <div class="dark"></div>
+        <div class="description d-flex flex-column ">
+            <h1 class="text-light fw-bolder">unlimited sofa collection</h1>
+            <p class="text-light fw-bolder">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                dolorum fugiat nihil, voluptas veritatis iste, eaque quisquam, non
+                quidem nostrum harum possimus pariatur totam debitis velit ut
+                aspernatur quos unde!
+            </p>
+            <h4 class="res fs-5 text-light fw-bolder">
+                starting from <span class="price">$199</span>
+            </h4>
+            <button class="btn btn-primary w-25 text-capitalize mt-4 fw-bolder" type="submit">
+                view more
+            </button>
+        </div>
+    </div>
+    <!---------------------------End of Slide ------------------------------------>
+
+    <!---------------------------Start of F.P ------------------------------------>
+    <div class="container icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84">
+        <h2 class="text-center text-capitalize my-5">featured product</h2>
+        <div class="row g-4 row-cols-lg-4 row-cols-md-2 row-cols-sm-1 col-sm-12">
+            <div class="col d-flex justify-content-center flex-column align-items-center">
+                <div class="text-center p-2 position-relative">
+                    <img src="./images/features/f1.jpg" class="mw-100" alt="D-sofa" />
+                </div>
+                <div class="stars mt-2">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star not-checked"></i>
+                    <p class="d-inline ms-2">(45 Review)</p>
+                </div>
+                <h4 class="text-center text-capitalize mt-2 fs-5">designed sofa</h4>
+                <div>$160.00</div>
+            </div>
+            <div class="col d-flex justify-content-center flex-column align-items-center">
+                <div class="text-center p-2 position-relative">
+                    <img src="./images/features/f2.jpg" class="mw-100" alt="D-table" />
+                </div>
+                <div class="stars mt-2">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star not-checked"></i>
+                    <p class="d-inline ms-2">(45 Review)</p>
+                </div>
+                <h4 class="text-center text-capitalize mt-2 fs-5">dinning table</h4>
+                <div>$200.00</div>
+            </div>
+            <div class="col d-flex justify-content-center flex-column align-items-center">
+                <div class="text-center p-2 position-relative">
+                    <img src="./images/features/f3.jpg" class="mw-100" alt="Chair&Table" />
+                </div>
+                <div class="stars mt-2">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star not-checked"></i>
+                    <p class="d-inline ms-2">(45 Review)</p>
+                </div>
+                <h4 class="text-center text-capitalize mt-2 fs-5">chair and table</h4>
+                <div>$100.00</div>
+            </div>
+            <div class="col d-flex justify-content-center flex-column align-items-center">
+                <div class="text-center p-2 position-relative">
+                    <img src="./images/features/f4.jpg" class="mw-100" alt="modern a.ch" />
+                </div>
+                <div class="stars mt-2">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star not-checked"></i>
+                    <p class="d-inline ms-2">(45 Review)</p>
+                </div>
+                <h4 class="text-center text-capitalize mt-2 fs-5">
+                    modern arm chair
+                </h4>
+                <div>$299.00</div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------End of F.P ------------------------------------>
+
+    <!---------------------------Start of L.B ---------------------------------->
+    <div class="container mt-4 pt-4 text-capitalize">
+        <h2 class="text-center text-capitalize my-5">latest blog</h2>
+        <div class="row g-3">
+            <div class="col-lg-4 col-md-6">
+                <img src="./images/blog/b1.jpg" alt="blog1" />
+                <h4 class="pt-3 fs-5 fw-bolder">
+                    why brands are looking at local language
+                </h4>
+                <span class="discount fs-6 fw-lighter">by robert norby / 18th march 2018</span>
+                <p class="mt-2">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
+                    possimus?
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <img src="./images/blog/b2.jpg" alt="blog2" />
+                <h4 class="pt-3 fs-5 fw-bolder">
+                    why brands are looking at local language
+                </h4>
+                <span class="discount fs-6 fw-lighter">by robert norby / 18th march 2018</span>
+                <p class="mt-2">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
+                    possimus?
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <img src="./images/blog/b3.jpg" alt="blog3" />
+                <h4 class="pt-3 fs-5 fw-bolder">
+                    why brands are looking at local language
+                </h4>
+                <span class="discount fs-6 fw-lighter">by robert norby / 18th march 2018</span>
+                <p class="mt-2">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
+                    possimus?
+                </p>
+            </div>
+        </div>
+    </div>
+    <!---------------------------End of L.B ------------------------------------>
+
+    <!---------------------------Start of Clinets ---------------------------------->
+    <div class="grid text-center d-flex clients justify-content-evenly mt-5 py-5">
+        <div><img src="./images/clients/c1.png" alt="clients1" /></div>
+        <div><img src="./images/clients/c2.png" alt="clients1" /></div>
+        <div><img src="./images/clients/c3.png" alt="clients1" /></div>
+        <div><img src="./images/clients/c4.png" alt="clients4" /></div>
+        <div><img src="./images/clients/c5.png" alt="clients5" /></div>
+    </div>
+    <!---------------------------End of Clinets ---------------------------------->
+
+    <!---------------------------Start of Last list ---------------------------------->
+    <div class="container icon-link-hover text-capitalize mt-5" style="--bs-link-hover-color-rgb: 25, 135, 84">
+        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-2">
+            <div class="col-3 ">
+                <div class="list-group">
+                    <ul class="ps-0">
+                        <li class="list-group-item">
+                            <h4>informatin</h4>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="p-0 list-group-item list-group-item-action">about us</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="p-0 list-group-item list-group-item-action">contact us</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="p-0 list-group-item list-group-item-action">news</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="p-0 list-group-item list-group-item-action">store</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="list-group">
+                    <ul class="ps-0">
+                        <li class="list-group-item">
+                            <h4>collections</h4>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="ps-0 list-group-item list-group-item-action">wooden chair</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="ps-0 list-group-item list-group-item-action">royal cloth sofa</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="ps-0 list-group-item list-group-item-action">accent chair</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="ps-0 list-group-item list-group-item-action">bed</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="ps-0 list-group-item list-group-item-action">hanging lamp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="list-group">
+                    <ul class="ps-0">
+                        <li class="list-group-item">
+                            <h4>my accounts</h4>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="ps-0 list-group-item list-group-item-action">my account</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="ps-0 list-group-item list-group-item-action">wishlist</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="ps-0 list-group-item list-group-item-action">community</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="ps-0 list-group-item list-group-item-action">order history</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="ps-0 list-group-item list-group-item-action">my cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="list-group">
+                    <ul class="ps-0">
+                        <li class="list-group-item">
+                            <h4>newsletter</h4>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="p-0 list-group-item list-group-item-action">subscribe to get latest
+                                news,update and informatin.</a>
+                        </li>
+                        <li class="list-group-item mt-4">
+                            <form role="search" id="form" class="d-flex">
+                                <input type="search" id="query" name="q" placeholder="Enter E-mail Here...."
+                                    aria-label="Search through site content">
+                                <button class="s-bar">
+                                    <i class="fa-solid fa-location-arrow fs-5 p-2"></i>
+                                </button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------End of Last list ---------------------------------->
+
+    <!---------------------------Start of Footer ---------------------------------->
+    <div class="container icon-link-hover text-capitalize mt-5 footer mx-0 mw-100">
+        <div class="text-center ">
+            <div class="d-flex align-items-center justify-content-center gap-4 py-5 social-logo">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-behance"></i>
+            </div>
+            <div class="cpy pb-5">
+                <i class="fa-regular fa-copyright"></i>
+                copyright. designed and developed by themesine
+            </div>
+        </div>
+    </div>
+    <!---------------------------End of Footer ---------------------------------->
+
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
